@@ -5,16 +5,17 @@ A Windows-hosted cybersecurity lab environment utilizing Graylog for centralized
 
 I built this lab because I wanted to move beyond the theory and understand how security teams actually catch bad actors in the wild. This project is my sandbox for log management and threat detection.
 
-## 🚀 The Mission
-My goal with this setup was to create a functional Security Operations Center (SOC) pipeline. By combining the deep visibility of Sysmon with the powerful analysis of Graylog, I’ve built a lab that can actually spot malicious activity rather than just logging random system events.
+##  The Mission
+My goal with this setup was to create a functional Security Operations Center (SOC) pipeline. By combining the deep visibility of Sysmon with the powerful analysis of Graylog and integrating Slack for real-time alerting, I’ve built a lab that can actually spot malicious activity rather than just logging random system events.
 
-## 🛠️ My Tech Stack
+##  My Tech Stack
 * **Host:** Windows 10/11
 * **Analysis Engine:** Graylog (running in Docker)
 * **Endpoint Telemetry:** Sysmon (System Monitor)
+* **Alerting Integration:** Slack (via Incoming Webhooks)
 * **Data Sources:** Windows Event Logs & Sysmon Events
 
-## 🏗️ Architecture
+##  Architecture
 I wanted to keep the data flow simple but effective:
 
 
@@ -26,6 +27,9 @@ I wanted to keep the data flow simple but effective:
       |
       v
 [ Dashboard & Alerting ]
+      |
+      v
+[ Slack Channel (Real-time Security Alerts) ]
 ## 🔍 Key Features
 * **Log Aggregation:** Centralized collection of logs from local Windows endpoints.
 * **Threat Detection:** Configured rules to detect brute-force authentication attempts.
