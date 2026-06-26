@@ -30,17 +30,18 @@ I wanted to keep the data flow simple but effective:
       |
       v
 [ Slack Channel (Real-time Security Alerts) ]
-## 🔍 Key Features
+```
+##  Key Features
 * **Log Aggregation:** Centralized collection of logs from local Windows endpoints.
 * **Threat Detection:** Configured rules to detect brute-force authentication attempts.
 * **Incident Monitoring:** Created dashboards in Graylog to visualize security events and failed login patterns.
 
-  ## 📸 Lab Evidence
+  ##  Lab Evidence
 Here is a snapshot of my Graylog instance detecting a brute force attack within my environment:
 
 ![Brute Force Detection](https://github.com/Chi-David575/Cybersecurity-Home-Lab/blob/main/Screenshot%202026-06-11%20143434.png)
 
-## 📈 Lessons Learned
+##  Lessons Learned
 * **Troubleshooting:** Overcame terminal errors during Docker container initialization by adjusting resource allocation.
 * **Optimization:** Fine-tuned log streaming to ensure only relevant security data is indexed, reducing storage overhead.
 * **Defender Mindset:** Learned to distinguish between benign system noise and actionable security alerts.
