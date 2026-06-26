@@ -36,29 +36,32 @@ I wanted to keep the data flow simple but effective:
 * **Threat Detection:** Configured rules to detect brute-force authentication attempts.
 * **Incident Monitoring:** Created dashboards in Graylog to visualize security events and failed login patterns.
 
-  ##  Lab Evidence
-Here is a snapshot of my Graylog lab environment:
 
-![Brute Force Detection](https://github.com/Chi-David575/Cybersecurity-Home-Lab/blob/main/Screenshot%202026-06-11%20143434.png)
 ## 📸 Lab Evidence
 
 **Slack Alert Integration**
 ![Slack Alert Notification](https://github.com/Chi-David575/Cybersecurity-Home-Lab/blob/main/Screenshot%202026-06-10%20182807.png?raw=true)
 
+
 **Security Pipeline Rules**
 ![Graylog Pipeline Configuration](https://github.com/Chi-David575/Cybersecurity-Home-Lab/blob/main/Screenshot%202026-06-12%20082909.png?raw=true)
+
 
 **Threat Detection: Scheduled Tasks**
 ![Scheduled Task Detection](https://github.com/Chi-David575/Cybersecurity-Home-Lab/blob/main/Screenshot%202026-06-12%20132829.png?raw=true)
 
+
 **System Optimization**
 ![WSL Configuration](https://github.com/Chi-David575/Cybersecurity-Home-Lab/blob/main/Screenshot%202026-06-16%20135152.png?raw=true)
+
 
 **IP-Specific Event Filtering**
 ![Filtering by IP Address](https://github.com/Chi-David575/Cybersecurity-Home-Lab/blob/main/Screenshot%202026-06-12%20085228.png?raw=true)
 
+
 **Brute Force Detection**
 ![Brute Force Detection](https://github.com/Chi-David575/Cybersecurity-Home-Lab/blob/main/Screenshot%202026-06-11%20143434.png?raw=true)
+
 
 ##  Lessons Learned
 * **Troubleshooting:** Overcame terminal errors during Docker container initialization by adjusting resource allocation.
