@@ -2,36 +2,30 @@
 A Windows-hosted cybersecurity lab environment utilizing Graylog for centralized log aggregation, threat detection, and real-time security monitoring.
 
 # Cybersecurity Home Lab: Centralized Log Analysis
-A Windows-based home lab environment designed for centralized log management and threat detection using Graylog and Wazuh.
 
-## 🚀 Project Overview
-This project focuses on building a functional Security Operations Center (SOC) pipeline to monitor and detect malicious activity. By integrating Wazuh for endpoint telemetry and Graylog for log aggregation, this lab simulates real-world threat detection workflows.
+I built this lab because I wanted to move beyond the theory and understand how security teams actually catch bad actors in the wild. This project is my sandbox for log management and threat detection.
 
-## 🛠️ Tech Stack
-* **Host OS:** Windows
-* **Security Tools:** Graylog
-* **Infrastructure:** Docker (for service containerization)
-* **Log Sources:** Windows Event Logs, Sysmon
+## 🚀 The Mission
+My goal with this setup was to create a functional Security Operations Center (SOC) pipeline. By combining the deep visibility of Sysmon with the powerful analysis of Graylog, I’ve built a lab that can actually spot malicious activity rather than just logging random system events.
+
+## 🛠️ My Tech Stack
+* **Host:** Windows 10/11
+* **Analysis Engine:** Graylog (running in Docker)
+* **Endpoint Telemetry:** Sysmon (System Monitor)
+* **Data Sources:** Windows Event Logs & Sysmon Events
 
 ## 🏗️ Architecture
-[ Windows Host ] 
+I wanted to keep the data flow simple but effective:
+
+```text
+[ Windows Host (Sysmon + Logs) ] 
       |
-      | (Generates Logs: Event Logs)
-      v
-[ Log Forwarder / Sidecar ] 
-      |
-      | (Transmits Data)
+      | (Log Forwarding)
       v
 [ Graylog Server (Docker) ]
       |
-      | (Processes, Indexes & Stores)
       v
-[ Graylog Web Interface ]
-      |
-      | (Visualizes & Alerts)
-      v
-[ Security Analyst ]
-
+[ Dashboard & Alerting ]
 ## 🔍 Key Features
 * **Log Aggregation:** Centralized collection of logs from local Windows endpoints.
 * **Threat Detection:** Configured rules to detect brute-force authentication attempts.
@@ -42,5 +36,3 @@ This project focuses on building a functional Security Operations Center (SOC) p
 * **Optimization:** Fine-tuned log streaming to ensure only relevant security data is indexed, reducing storage overhead.
 * **Defender Mindset:** Learned to distinguish between benign system noise and actionable security alerts.
 
-## 📸 Lab Evidence
-[Insert screenshots of your Graylog Dashboard or Wazuh alert logs here]
