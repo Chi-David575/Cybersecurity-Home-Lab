@@ -18,7 +18,7 @@ My goal with this setup was to create a functional Security Operations Center (S
 ##  Architecture
 I wanted to keep the data flow simple but effective:
 
-
+```text
 [ Windows Host (Sysmon + Logs) ] 
       |
       | (Log Forwarding)
